@@ -100,9 +100,22 @@ url('./fonts/Geometria-ExtraLightItalic.eot?#iefix') format('embedded-opentype')
 url('./fonts/Geometria-ExtraLightItalic.woff2') format('woff2')	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^  url('.\/fonts\/Geometria-ExtraLightItalic.woff2') format('woff2'),$/;"	function	line:201
 url('./fonts/Geometria-ExtraLightItalic.woff') format('woff')	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^  url('.\/fonts\/Geometria-ExtraLightItalic.woff') format('woff'),$/;"	function	line:202
 url('./fonts/Geometria-ExtraLightItalic.ttf') format('truetype')	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^  url('.\/fonts\/Geometria-ExtraLightItalic.ttf') format('truetype'),$/;"	function	line:203
-html, body	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^html, body{$/;"	function	line:209
-.main-bg	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.main-bg {$/;"	function	line:213
-header.header	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^header.header {$/;"	function	line:221
-.wrapper	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.wrapper{$/;"	function	line:225
-header .nav.menu	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^header .nav.menu{$/;"	function	line:230
-.logo-right	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.logo-right {$/;"	function	line:234
+*	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^*{$/;"	function	line:208
+html, body	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^html, body{$/;"	function	line:211
+.main-bg	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.main-bg {$/;"	function	line:215
+header.header	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^header.header {$/;"	function	line:224
+.wrapper	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.wrapper{$/;"	function	line:229
+header .nav.menu	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^header .nav.menu{$/;"	function	line:234
+header .nav.menu a	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^header .nav.menu a{$/;"	function	line:240
+.logo-right	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.logo-right {$/;"	function	line:243
+h1	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^h1{$/;"	function	line:247
+.white	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.white{$/;"	function	line:252
+h2	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^h2{$/;"	function	line:255
+.nomargin	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.nomargin{$/;"	function	line:260
+.news-ctn	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.news-ctn{$/;"	function	line:263
+.news-ctn h3	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.news-ctn h3{$/;"	function	line:267
+.news-title	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.news-title {$/;"	function	line:279
+.news-title a	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.news-title a{$/;"	function	line:287
+.news-date span	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.news-date span{$/;"	function	line:290
+.news-list	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.news-list {$/;"	function	line:296
+.main-bg .wrapper	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.main-bg .wrapper{$/;"	function	line:301

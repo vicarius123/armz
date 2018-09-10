@@ -27,5 +27,7 @@ $item = $this->item;
 ?>
 <div class="item-page-text <?php echo $this->pageclass_sfx; ?>" itemscope itemtype="https://schema.org/Article">
 	<meta itemprop="inLanguage" content="<?php echo ($this->item->language === '*') ? JFactory::getConfig()->get('language') : $this->item->language; ?>" />
-  <?=$item->text;?>
+  <div class="wrapper">
+		<?=$item->text;?>
+	</div>
 </div>
