@@ -33,6 +33,8 @@
         <position>banner5</position>
         <position>banner6</position>
         <position>bottom1</position>
+        <position>logo-right</position>
+        <position>lang</position>
         <position>bottom2</position>
         <position>bottom3</position>
         <position>breadcrumb</position>

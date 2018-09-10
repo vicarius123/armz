@@ -44,7 +44,6 @@ JHtml::_('behavior.framework', true);
 
   <!--[if lte IE 7]><link rel="stylesheet" href="<?php echo $templateUrl; ?>/css/template.ie7.css" media="screen" /><![endif]-->
   <script>jQuery.noConflict();</script>
-  <script src="<?php echo $templateUrl; ?>/jquery.matchHeight.js"></script>
   <script src="<?php echo $templateUrl; ?>/script.js"></script>
 
   <?php $view->includeInlineScripts() ?>
@@ -56,22 +55,15 @@ JHtml::_('behavior.framework', true);
 
     <header class="header">
       <div class="wrapper">
-        <div class="row header1">
-          <div class="col-sm-6 col-6 text-left">
-            <?php echo $view->position('logo', ''); ?>
-          </div>
-          <div class="col-sm-6 col-6 text-right">
-            <?php echo $view->position('header', ''); ?>
-          </div>
-        </div>
+        <nav class="d-flex head align-items-center">
+          <?php echo $view->position('logo', ''); ?>
 
-      </div>
-      <nav class="menu-bar">
-        <div class="wrapper">
           <?php echo $view->position('menu', ''); ?>
-        </div>
 
-      </nav>
+          <?php echo $view->position('logo-right', ''); ?>
+        </nav>
+      </div>
+
     </header>
     <div class="main-block">
       <?php echo $view->position('mainblock', ''); ?>
@@ -144,7 +136,7 @@ JHtml::_('behavior.framework', true);
   </div>
 </footer>
 
-
+<?php echo $view->position('lang', ''); ?>
 <?php echo $view->position('debug'); ?>
 </body>
 </html>
