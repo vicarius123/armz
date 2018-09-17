@@ -3,6 +3,17 @@
     <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
     <title>Group 4</title>
     <desc>Created with Sketch.</desc>
+    <style>
+      #Symbols{
+        fill:#fff
+      }
+      #Symbols:hover{
+        fill: #005392;
+      }
+      #Symbols:hover #vk-social-logotype{
+        fill:#fff
+      }
+    </style>
     <defs></defs>
     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="footer" transform="translate(-1242.000000, -22.000000)" fill-rule="nonzero">

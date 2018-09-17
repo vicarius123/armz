@@ -84,13 +84,13 @@ if ($tagId = $params->get('tag_id', ''))
 	// The next item is deeper.
 	if ($item->deeper)
 	{
-		echo '<ul class="nav-child unstyled small">';
+		echo '<div class="nav-child"><div><ul class="inner-menu">';
 	}
 	// The next item is shallower.
 	elseif ($item->shallower)
 	{
 		echo '</li>';
-		echo str_repeat('</ul></li>', $item->level_diff);
+		echo str_repeat('</ul></div></div></li>', $item->level_diff);
 	}
 	// The next item is on the same level.
 	else

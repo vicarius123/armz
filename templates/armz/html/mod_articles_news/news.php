@@ -14,4 +14,7 @@ defined('_JEXEC') or die;
 	<?php foreach ($list as $item) : ?>
 		<?php require JModuleHelper::getLayoutPath('mod_articles_news', '_news'); ?>
 	<?php endforeach; ?>
+	<div class="text-right read-more-news">
+		<a href="#">Все новости <img src="/images/arrow-news.svg" /></a>
+	</div>
 </div>

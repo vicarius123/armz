@@ -211,20 +211,40 @@
 html, body{
   font-family: 'Geometria';
   width:100%;
+  font-size: 14px;
+}
+html{
+  height:100%;
+}
+body{
+  min-height: 810px;
+  position: relative;
+  height: 100%;
 }
 .main-bg {
   background: url(/images/bg.jpg)top no-repeat;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  position: absolute;
-  top: 0;
+  position: relative;
   background-size: cover;
   padding-top: 190px;
+  padding-bottom: 105px;
+  min-height: 100vh;
+}
+#main{
+  min-height: 100vh;
+  height: 100%;
+  overflow-y: hidden;
+  padding-bottom: 75px;
 }
 header.header {
-  position: relative;
+  position: absolute;
   z-index: 2;
   border-bottom: 1px solid #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 .wrapper{
   max-width:1440px;
@@ -301,6 +321,98 @@ h2{
 .main-bg .wrapper{
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: -webkit-fill-available;
   justify-content: space-between;
+}
+.btn-new{
+  border-radius: 19.5px;
+  background-color: #fff;
+  font-size: 12px;
+  color: #005392;
+  padding: 10px 24px;
+  border:1px solid #005392;
+}
+.filled{
+  color: #fff;
+  background-color: #005392;
+}
+.foo-separator {
+  width: 0.1px;
+  height: 49px;
+  border: solid 1px #cfcfd1;
+}
+footer.footer {
+  padding: 13px 0px;
+  position:absolute;
+  bottom:0;
+  background:#fff;
+  width:100%;
+}
+.read-more-news{
+  margin-top:19px
+}
+.read-more-news a{
+  color:#fff;
+  font-size: 14px;
+}
+.read-more-news img{
+  padding-left:15px;
+}
+.col-fixed{
+  max-width:350px;
+}
+.main-page-block h2{
+  margin-bottom: 30px;
+}
+.main_menu .nav-child > div{
+  height: 0%;
+  padding: 0;
+  overflow: hidden;
+  -webkit-transition: all .5s; /* Safari */
+  transition: all .5s;
+  background:#fff;
+}
+.main_menu .nav-child {
+  position: absolute;
+  width: 100%;
+
+  height: 0%;
+  left: 0;
+  top: 58px;
+  padding-top: 45px;
+  pointer-events: none;
+  -webkit-transition: all .5s; /* Safari */
+  transition: all .5s;
+}
+.main_menu li:hover .nav-child{
+  pointer-events: all;
+  height: 100%;
+  -webkit-transition: all .5s; /* Safari */
+  transition: all .5s;
+}
+.main_menu li:hover .nav-child > div{
+  height: 103px;
+  padding: 11px 0px;
+
+}
+.inner-menu{
+  max-width: 700px;
+  margin-left: 0;  
+}
+.main_menu li:hover .nav-child li{
+
+}
+.main_menu .nav-child  ul {
+  display: flex;
+  font-size: 14px;
+  line-height: 1.93;
+  font-weight:400;
+  justify-content: space-around;
+  flex-direction: column;
+  list-style-type: none;
+  max-height: 83px;
+  flex-wrap: wrap;
+}
+.main_menu .nav-child ul a{
+  color:#000 !important;
 }

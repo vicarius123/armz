@@ -121,22 +121,27 @@ JHtml::_('behavior.framework', true);
 
 <footer class="footer">
   <div class="footer-inner wrapper">
-    <div class="row">
-      <div class="col-sm-6">
+    <div class="row align-items-center">
+      <div class="col col-fixed">
         <?php echo $view->position('copyright-left'); ?>
       </div>
-      <div class="col-sm-6">
+      <div class="col text-center">
+
+        <?php echo $view->position('copyright'); ?>
+      </div>
+      <div class="col col-fixed">
         <?php echo $view->position('copyright-right'); ?>
       </div>
     </div>
-    <div class="foo-separator"></div>
-    <?php echo $view->position('copyright'); ?>
+
 
 
   </div>
+  <div class="d-none">
+    <?php echo $view->position('lang', ''); ?>
+  </div>
 </footer>
 
-<?php echo $view->position('lang', ''); ?>
 <?php echo $view->position('debug'); ?>
 </body>
 </html>
