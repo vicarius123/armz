@@ -75,7 +75,7 @@ JHtml::_('behavior.framework', true);
 
       <?php if ($view->containsModules('left')) : ?>
       <div class="wrapper">
-        <div class="row">
+        <div class="row float-header">
           <div class="col-sm-3 left-row">
             <?php echo $view->position('left', 'block'); ?>
           </div>
@@ -83,7 +83,7 @@ JHtml::_('behavior.framework', true);
             <?php
             echo $view->position('banner2', '');
             if ($view->containsModules('breadcrumb'))
-            echo artxPost($view->position('breadcrumb'));
+            echo $view->position('breadcrumb');
             echo $view->positions(array('user1' => 50, 'user2' => 50), 'article');
             echo $view->position('banner3', '');
             echo artxPost(array('content' => '<jdoc:include type="message" />', 'classes' => ' messages'));
@@ -100,7 +100,7 @@ JHtml::_('behavior.framework', true);
         <?php
         echo $view->position('banner2', '');
         if ($view->containsModules('breadcrumb'))
-        echo artxPost($view->position('breadcrumb'));
+        echo $view->position('breadcrumb');
         echo $view->positions(array('user1' => 50, 'user2' => 50), 'article');
         echo $view->position('banner3', '');
         echo artxPost(array('content' => '<jdoc:include type="message" />', 'classes' => ' messages'));
