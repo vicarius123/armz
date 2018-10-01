@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" method="upgrade" client="site">
+    <name>MOD_ARMZ_VACANCIES_NAME</name>
+    <creationDate>2018-10-01</creationDate>
+    <copyright>2018 Cristopher Chong - nOne.ru</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <author>Cristopher Chong</author>
+    <authorEmail>cris_chong2@hotmail.com</authorEmail>
+    <authorUrl>http://none.ru</authorUrl>
+    <version>CVS: 1.0.0</version>
+    <description>MOD_ARMZ_VACANCIES_DESCRIPTION</description>
+    
+    <files>
+        <filename module="mod_armz_vacancies">mod_armz_vacancies.php</filename>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>
+    </files>
+    <languages folder="languages">
+        
+			<language tag="en-GB">en-GB/en-GB.mod_armz_vacancies.ini</language>
+			<language tag="en-GB">en-GB/en-GB.mod_armz_vacancies.sys.ini</language>
+			<language tag="ru-RU">ru-RU/ru-RU.mod_armz_vacancies.ini</language>
+			<language tag="ru-RU">ru-RU/ru-RU.mod_armz_vacancies.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset 
+                name="content_type" 
+                label="MOD_ARMZ_VACANCIES_CONTENT_TYPE_TAB_LBL"
+                description="MOD_ARMZ_VACANCIES_CONTENT_TYPE_TAB_DESC">
+                <field
+                    name="content_type" type="list"
+                    label="MOD_ARMZ_VACANCIES_CONTENT_TYPE_LBL"
+                    description="MOD_ARMZ_VACANCIES_CONTENT_TYPE_DESC">
+                    <option value="blank">MOD_ARMZ_VACANCIES_CUSTOM_CONTENT</option>
+                    <option value="list">MOD_ARMZ_VACANCIES_LIST</option>
+                    <option value="item">MOD_ARMZ_VACANCIES_ITEM</option>
+                </field>
+            </fieldset>
+            <fieldset 
+                name="blank_content" 
+                label="MOD_ARMZ_VACANCIES_CUSTOM_CONTENT_TAB_LBL"
+                description="MOD_ARMZ_VACANCIES_CUSTOM_CONTENT_TAB_DESC">
+                <field 
+                    name="html_content" type="editor" filter="safehtml"
+                    label="MOD_ARMZ_VACANCIES_HTML_LBL"
+                    description="MOD_ARMZ_VACANCIES_HTML_DESC" />
+            </fieldset>
+            <fieldset 
+                name="list_content" 
+                label="MOD_ARMZ_VACANCIES_LIST_CONTENT_TAB_LBL"
+                description="MOD_ARMZ_VACANCIES_LIST_CONTENT_TAB_DESC">
+                <field
+                    name="table" type="list"
+                    label="MOD_ARMZ_VACANCIES_TABLE_LBL"
+                    description="MOD_ARMZ_VACANCIES_TABLE_DESC">
+                    
+	<option value="#__armz_vacancies_company">#__armz_vacancies_company</option>
+	<option value="#__armz_vacancies">#__armz_vacancies</option>
+                </field>
+                <field 
+                    name="field" type="groupedlist" default=""
+                    label="MOD_ARMZ_VACANCIES_FIELD_LBL"
+                    description="MOD_ARMZ_VACANCIES_FIELD_DESC">
+                    
+	<group label="#__armz_vacancies_company">
+		<option value="id">id</option>
+		<option value="created_by">created_by</option>
+		<option value="modified_by">modified_by</option>
+		<option value="name">name</option>
+		<option value="logo">logo</option>
+	</group>
+	<group label="#__armz_vacancies">
+		<option value="id">id</option>
+		<option value="created_by">created_by</option>
+		<option value="modified_by">modified_by</option>
+		<option value="title">title</option>
+		<option value="alias">alias</option>
+		<option value="title_eng">title_eng</option>
+		<option value="company">company</option>
+		<option value="desc">desc</option>
+		<option value="desc_eng">desc_eng</option>
+	</group>
+                </field>
+                <field 
+                    name="offset" type="text" default="0" filter="uint" class="input-small"
+                    label="MOD_ARMZ_VACANCIES_OFFSET_LBL"
+                    description="MOD_ARMZ_VACANCIES_OFFSET_DESC" />
+                <field 
+                    name="limit" type="text" default="10" filter="uint" class="input-small"
+                    label="MOD_ARMZ_VACANCIES_LIMIT_LBL"
+                    description="MOD_ARMZ_VACANCIES_LIMIT_DESC" />
+            </fieldset>
+            <fieldset 
+                name="item_content" 
+                label="MOD_ARMZ_VACANCIES_ITEM_CONTENT_TAB"
+                description="MOD_ARMZ_VACANCIES_ITEM_CONTENT_TAB_DESC">
+                <field
+                    name="item_table" type="list"
+                    label="MOD_ARMZ_VACANCIES_TABLE_LBL"
+                    description="MOD_ARMZ_VACANCIES_TABLE_DESC">
+                    
+	<option value="#__armz_vacancies_company">#__armz_vacancies_company</option>
+	<option value="#__armz_vacancies">#__armz_vacancies</option>
+                </field>
+                <field 
+                    name="item_id" type="text" filter="uint" class="input-small"
+                    label="MOD_ARMZ_VACANCIES_ITEM_ID_LBL"
+                    description="MOD_ARMZ_VACANCIES_ITEM_ID_DESC"
+                />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
