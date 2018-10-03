@@ -45,9 +45,9 @@ class Armz_vacanciesRouter extends JComponentRouterBase
 
 		if (isset($query['view']))
 		{
-			$segments[] = $query['view'];
+			$segments[] = '';
 			$view = $query['view'];
-			
+
 			unset($query['view']);
 		}
 
@@ -90,7 +90,7 @@ class Armz_vacanciesRouter extends JComponentRouterBase
 		$vars = array();
 
 		// View is always the first element of the array
-		$vars['view'] = array_shift($segments);
+		$vars['view'] = 'vacancy';
 		$model        = Armz_vacanciesHelpersArmz_vacancies::getModel($vars['view']);
 
 		while (!empty($segments))
@@ -115,7 +115,7 @@ class Armz_vacanciesRouter extends JComponentRouterBase
 				}
 			}
 		}
-
+		
 		return $vars;
 	}
 }

@@ -9,13 +9,14 @@
 // No direct access
 defined('_JEXEC') or die;
 
+print_r($this->item);
 
 ?>
 
 <div class="item_fields">
 
 	<table class="table">
-		
+
 
 		<tr>
 			<th><?php echo JText::_('COM_ARMZ_VACANCIES_FORM_LBL_VACANCY_TITLE'); ?></th>
@@ -50,4 +51,3 @@ defined('_JEXEC') or die;
 	</table>
 
 </div>
-

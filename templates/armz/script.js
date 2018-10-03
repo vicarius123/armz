@@ -50,7 +50,7 @@ jQuery(document).ready(function(){
     _id = jQuery(_target).attr('id');
 
     console.log(jQuery('#'+_id).offset().top);
-    $("html, body").animate({
+    jQuery("html, body").animate({
         scrollTop: jQuery('#'+_id).offset().top-200
     }, 100);
   });
@@ -93,7 +93,40 @@ jQuery(document).ready(function(){
   jQuery('.vacancy-logo').matchHeight({ byRow: true, property: 'height', target: null, remove: false });
 
 
+  /* Vacancies function*/
 
+
+
+  jQuery('.chief-ctn').click(function(e){
+    e.preventDefault();
+    _mm = jQuery('.chiefs-ctn').offset().top-150;
+
+    _m = '-'+_mm;
+    console.log(_m);
+    jQuery('.chiefs-ctn').css('margin-top', _m+'px')
+    setTimeout(function(){
+      jQuery('.chief-list').css('opacity', 0);
+    }, 500)
+    jQuery("html, body").animate({
+        scrollTop: 0
+    }, 100);
+
+    _id = jQuery(this).data('id');
+
+    jQuery('.chiefs-ctn').addClass('active');
+    jQuery('.carousel-item').removeClass('active')
+    jQuery('.item-ch-'+_id).addClass('active')
+  });
+
+  jQuery('.close-panel').click(function(e){
+    e.preventDefault();
+    jQuery('.chief-list').css('opacity', 1);
+    jQuery('.chiefs-ctn').removeClass('active');
+    setTimeout(function(){
+      jQuery('.carousel-item').removeClass('active');
+      jQuery('.chiefs-ctn').css('margin-top', 0)
+    }, 500)
+  })
 
 
 })

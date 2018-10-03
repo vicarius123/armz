@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fieldset>
+    <field name="id" type="text" readonly="true" class="readonly" default="0" description="JGLOBAL_FIELD_ID_DESC"/>
+    <field name="ordering"/>
+    <field name="state" default="1" type="list" label="JSTATUS" description="JFIELD_PUBLISHED_DESC" class="inputbox" size="1">
+      <option value="1">JPUBLISHED</option>
+      <option value="0">JUNPUBLISHED</option>
+      <option value="2">JARCHIVED</option>
+      <option value="-2">JTRASHED</option>
+    </field>
+    <field name="checked_out" type="hidden" filter="unset"/>
+    <field name="checked_out_time" default="0000-00-00 00:00:00" type="hidden" filter="unset"/>
+    <field name="created_by" type="createdby" default="0" label="COM_ARMZ_CHIEFS_FORM_LBL_CHIEF_CREATED_BY" description="COM_ARMZ_CHIEFS_FORM_DESC_CHIEF_CREATED_BY" hidden="true" hint="COM_ARMZ_CHIEFS_FORM_LBL_CHIEF_CREATED_BY"/>
+    <field name="modified_by" type="modifiedby" default="0" label="COM_ARMZ_CHIEFS_FORM_LBL_CHIEF_MODIFIED_BY" description="COM_ARMZ_CHIEFS_FORM_DESC_CHIEF_MODIFIED_BY" hidden="true" hint="COM_ARMZ_CHIEFS_FORM_LBL_CHIEF_MODIFIED_BY"/>
+    <field name="name" filter="safehtml" type="text" required="true" label="COM_ARMZ_CHIEFS_FORM_LBL_CHIEF_NAME" description="COM_ARMZ_CHIEFS_FORM_DESC_CHIEF_NAME" hint="COM_ARMZ_CHIEFS_FORM_LBL_CHIEF_NAME"/>
+    <field name="name2" filter="safehtml" type="text" label="COM_ARMZ_CHIEFS_FORM_LBL_CHIEF_NAME2" description="COM_ARMZ_CHIEFS_FORM_DESC_CHIEF_NAME2" hint="COM_ARMZ_CHIEFS_FORM_LBL_CHIEF_NAME2"/>
+    <field name="lastname" filter="safehtml" type="text" label="COM_ARMZ_CHIEFS_FORM_LBL_CHIEF_LASTNAME" description="COM_ARMZ_CHIEFS_FORM_DESC_CHIEF_LASTNAME" hint="COM_ARMZ_CHIEFS_FORM_LBL_CHIEF_LASTNAME"/>
+    <field name="charge" filter="safehtml" type="text" label="COM_ARMZ_CHIEFS_FORM_LBL_CHIEF_CHARGE" description="COM_ARMZ_CHIEFS_FORM_DESC_CHIEF_CHARGE" hint="COM_ARMZ_CHIEFS_FORM_LBL_CHIEF_CHARGE"/>
+    <field name="pic" type="FileMultiple" label="COM_ARMZ_CHIEFS_FORM_LBL_CHIEF_PIC" description="COM_ARMZ_CHIEFS_FORM_DESC_CHIEF_PIC" hint="COM_ARMZ_CHIEFS_FORM_LBL_CHIEF_PIC"/>
+    <field name="resume" editor="|" buttons="false" filter="JComponentHelper::filterText" type="editor" label="COM_ARMZ_CHIEFS_FORM_LBL_CHIEF_RESUME" description="COM_ARMZ_CHIEFS_FORM_DESC_CHIEF_RESUME" hint="COM_ARMZ_CHIEFS_FORM_LBL_CHIEF_RESUME"/>
+    <field name="version_note" type="text" label="JGLOBAL_FIELD_VERSION_NOTE_LABEL" description="JGLOBAL_FIELD_VERSION_NOTE_DESC" class="inputbox" size="45" labelclass="control-label"/>
+  </fieldset>
+</form>

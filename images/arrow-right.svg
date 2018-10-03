@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="49px" height="49px" viewBox="0 0 49 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Компания" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Руководство_1" transform="translate(-1276.000000, -508.000000)" stroke="#FFFFFF" stroke-width="2">
+            <g id="Group-3" transform="translate(1277.000000, 509.000000)">
+                <g id="icons/20pt/ico-back">
+                    <g id="news_arrow" transform="translate(23.500000, 23.500000) rotate(-180.000000) translate(-23.500000, -23.500000) ">
+                        <polyline id="Triangle" transform="translate(22.629630, 23.500000) rotate(-180.000000) translate(-22.629630, -23.500000) " points="18.2777778 14.7962963 26.9814815 23.5 18.2777778 32.2037037 18.2777778 32.2037037"></polyline>
+                        <circle id="Oval-4" fill-rule="nonzero" cx="23.5" cy="23.5" r="23.5"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
