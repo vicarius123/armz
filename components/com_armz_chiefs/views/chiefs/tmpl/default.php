@@ -12,9 +12,11 @@ defined('_JEXEC') or die;
 JHtml::addIncludePath(JPATH_COMPONENT . '/helpers/html');
 $items =  $this->items;
 $n = 0;
+$active = JFactory::getApplication()->getMenu()->getActive();
+$menuname = $active->params->get('page_heading');
 ?>
 <div class="item-page-text">
-  <h1>Руководство</h1>
+  <h1><?=$active->title;?></h1>
   <div class="chief-list">
     <div class="row">
       <?foreach($items as $item):?>

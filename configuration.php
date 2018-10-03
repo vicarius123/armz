@@ -7,7 +7,7 @@ class JConfig {
 	public $sitename = 'Armz';
 	public $editor = 'tinymce';
 	public $captcha = '0';
-	public $list_limit = '20';
+	public $list_limit = '500';
 	public $access = '1';
 	public $debug = '0';
 	public $debug_lang = '0';
@@ -54,7 +54,7 @@ class JConfig {
 	public $sef_rewrite = '1';
 	public $sef_suffix = '0';
 	public $unicodeslugs = '0';
-	public $feed_limit = '10';
+	public $feed_limit = '50';
 	public $feed_email = 'none';
 	public $log_path = '/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/logs';
 	public $tmp_path = '/Applications/XAMPP/xamppfiles/htdocs/armz/tmp';

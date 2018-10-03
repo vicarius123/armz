@@ -51,8 +51,8 @@ class Armz_chiefsModelChiefs extends JModelList
 		parent::__construct($config);
 	}
 
-        
-        
+
+
 	/**
 	 * Method to auto-populate the model state.
 	 *
@@ -127,7 +127,7 @@ class Armz_chiefsModelChiefs extends JModelList
                 );
 
             $query->from('`#__armz_chiefs` AS a');
-            
+
 		// Join over the users for the checked out user.
 		$query->select('uc.name AS uEditor');
 		$query->join('LEFT', '#__users AS uc ON uc.id=a.checked_out');
@@ -137,7 +137,7 @@ class Armz_chiefsModelChiefs extends JModelList
 
 		// Join over the created by field 'modified_by'
 		$query->join('LEFT', '#__users AS modified_by ON modified_by.id = a.modified_by');
-            
+
 		if (!Factory::getUser()->authorise('core.edit', 'com_armz_chiefs'))
 		{
 			$query->where('a.state = 1');
@@ -158,10 +158,10 @@ class Armz_chiefsModelChiefs extends JModelList
 				$query->where('( a.name LIKE ' . $search . '  OR  a.name2 LIKE ' . $search . '  OR  a.lastname LIKE ' . $search . ' )');
                 }
             }
-            
+
 
             // Add the list ordering clause.
-            $orderCol  = $this->state->get('list.ordering', "a.id");
+            $orderCol  = $this->state->get('list.ordering', "a.ordering");
             $orderDirn = $this->state->get('list.direction', "ASC");
 
             if ($orderCol && $orderDirn)
@@ -180,7 +180,7 @@ class Armz_chiefsModelChiefs extends JModelList
 	public function getItems()
 	{
 		$items = parent::getItems();
-		
+
 
 		return $items;
 	}

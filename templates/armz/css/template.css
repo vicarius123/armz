@@ -504,7 +504,7 @@ b.medium{
 .inner-page #main{
   height:auto;
 }
-.number li:before{
+.number > li:before{
   content: counter(my-counter);
   counter-increment: my-counter;
   display: block;
@@ -960,4 +960,28 @@ footer{
 }
 .chief-ctn:hover .chief-pic img{
   transform: scale(1.1);
+}
+.finance-list h2{
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+}
+.finance-list .row{
+  margin-bottom:20px;
+}
+.finance-list .date-finance{
+  font-size: 14px;
+  color: #9b9b9b;
+}
+.pdf_file img{
+  margin-right:20px;
+}
+.pdf_file{
+  text-decoration: none !important;
+}
+.pdf_file span{
+  font-size: 14px;
+  color: #9b9b9b;
 }

@@ -13,14 +13,10 @@ JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
 
 JHtml::_('behavior.caption');
 ?>
-<div class="category-list<?php echo $this->pageclass_sfx; ?>">
+<div class="item-page-text category-list<?php echo $this->pageclass_sfx; ?>">
 
 <?php
-if($this->pageclass_sfx == 'news'){
-  $this->subtemplatename = 'news';
-}else{
-  $this->subtemplatename = 'articles';
-}
+$this->subtemplatename = 'articles';
 
 echo JLayoutHelper::render('joomla.content.category_default', $this);
 ?>

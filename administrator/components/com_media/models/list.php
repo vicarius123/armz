@@ -155,6 +155,7 @@ class MediaModelList extends JModelLegacy
 						case 'xcf':
 						case 'odg':
 						case 'bmp':
+						case 'pdf':
 						case 'jpeg':
 						case 'ico':
 							$info = @getimagesize($tmp->path);

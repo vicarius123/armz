@@ -9,9 +9,6 @@ i	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/mod_menu/menu.p
 class	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/mod_menu/menu.php	/^	$class = 'item-' . $item->id;$/;"	variable	line:24
 aliasToId	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/mod_menu/menu.php	/^		$aliasToId = $item->params->get('aliasoptions');$/;"	variable	line:42
 aliasToId	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/mod_menu/menu.php	/^		if (count($path) > 0 && $aliasToId == $path[count($path) - 1])$/;"	variable	line:44
-document	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/index.php	/^$document = $this;$/;"	variable	line:12
-templateUrl	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/index.php	/^$templateUrl = $document->baseurl . '\/templates\/' . $document->template;$/;"	variable	line:15
-view	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/index.php	/^$view = $this->artx = new ArtxPage($this);$/;"	variable	line:20
 id	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/mod_menu/left.php	/^$id = '';$/;"	variable	line:12
 id	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/mod_menu/left.php	/^	$id = ' id="' . $tagId . '"';$/;"	variable	line:16
 is	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/mod_menu/left.php	/^\/\/ The menu class is deprecated. Use nav instead$/;"	class	line:19
@@ -22,6 +19,178 @@ aliasToId	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/mod_men
 init	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/script.js	/^    function init(){$/;"	function	line:71
 setTimeout	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/script.js	/^    setTimeout(function(){$/;"	function	line:107
 setTimeout	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/script.js	/^    setTimeout(function(){$/;"	function	line:125
+Armz_chiefsModelChiefs	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^class Armz_chiefsModelChiefs extends JModelList$/;"	class	line:22
+__construct	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^	public function __construct($config = array())$/;"	function	line:32
+populateState	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^	protected function populateState($ordering = null, $direction = null)$/;"	function	line:70
+direction	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^	protected function populateState($ordering = null, $direction = null)$/;"	variable	line:70
+app	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^            $app  = Factory::getApplication();$/;"	variable	line:72
+list	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^		$list = $app->getUserState($this->context . '.list');$/;"	variable	line:73
+ordering	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^		$ordering  = isset($list['filter_order'])     ? $list['filter_order']     : null;$/;"	variable	line:75
+direction	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^		$direction = isset($list['filter_order_Dir']) ? $list['filter_order_Dir'] : null;$/;"	variable	line:76
+app	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^            $app = Factory::getApplication();$/;"	variable	line:89
+ordering	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^            $ordering  = $app->getUserStateFromRequest($this->context . '.ordercol', 'filter_order', $ordering);$/;"	variable	line:91
+direction	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^            $direction = $app->getUserStateFromRequest($this->context . '.orderdirn', 'filter_order_Dir', $ordering);$/;"	variable	line:92
+start	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^            $start = $app->getUserStateFromRequest($this->context . '.limitstart', 'limitstart', 0, 'int');$/;"	variable	line:97
+limit	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^            $limit = $app->getUserStateFromRequest($this->context . '.limit', 'limit', 0, 'int');$/;"	variable	line:98
+limit	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^                $limit = $app->get('list_limit', 0);$/;"	variable	line:102
+getListQuery	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^	protected function getListQuery()$/;"	function	line:116
+db	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^            $db    = $this->getDbo();$/;"	variable	line:119
+query	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^            $query = $db->getQuery(true);$/;"	variable	line:120
+search	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^            $search = $this->getState('filter.search');$/;"	variable	line:147
+search	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^                    $search = $db->Quote('%' . $db->escape($search, true) . '%');$/;"	variable	line:157
+orderCol	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^            $orderCol  = $this->state->get('list.ordering', "a.ordering");$/;"	variable	line:164
+orderDirn	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^            $orderDirn = $this->state->get('list.direction', "ASC");$/;"	variable	line:165
+getItems	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^	public function getItems()$/;"	function	line:180
+items	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^		$items = parent::getItems();$/;"	variable	line:182
+to	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^	 * Overrides the default function to check Date fields format, identified by$/;"	function	line:189
+loadFormData	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^	protected function loadFormData()$/;"	function	line:194
+app	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^		$app              = Factory::getApplication();$/;"	variable	line:196
+filters	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^		$filters          = $app->getUserState($this->context . '.filter', array());$/;"	variable	line:197
+error_dateformat	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^		$error_dateformat = false;$/;"	variable	line:198
+key	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^		foreach ($filters as $key => $value)$/;"	variable	line:200
+error_dateformat	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^				$error_dateformat = true;$/;"	variable	line:205
+isValidDate	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^	private function isValidDate($date)$/;"	function	line:225
+date	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^		$date = str_replace('\/', '-', $date);$/;"	variable	line:227
+MediaModelList	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^class MediaModelList extends JModelLegacy$/;"	class	line:20
+getState	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^	public function getState($property = null, $default = null)$/;"	function	line:32
+default	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^	public function getState($property = null, $default = null)$/;"	variable	line:32
+set	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		static $set;$/;"	variable	line:34
+input	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^			$input  = JFactory::getApplication()->input;$/;"	variable	line:38
+folder	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^			$folder = $input->get('folder', '', 'path');$/;"	variable	line:39
+parent	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^			$parent = str_replace("\\\\", '\/', dirname($folder));$/;"	variable	line:42
+parent	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^			$parent = ($parent == '.') ? null : $parent;$/;"	variable	line:43
+set	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^			$set = true;$/;"	variable	line:45
+getImages	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^	public function getImages()$/;"	function	line:58
+list	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$list = $this->getList();$/;"	variable	line:60
+getFolders	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^	public function getFolders()$/;"	function	line:72
+list	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$list = $this->getList();$/;"	variable	line:74
+getDocuments	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^	public function getDocuments()$/;"	function	line:86
+list	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$list = $this->getList();$/;"	variable	line:88
+getList	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^	public function getList()$/;"	function	line:100
+list	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		static $list;$/;"	variable	line:102
+current	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$current = (string) $this->getState('folder');$/;"	variable	line:111
+basePath	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$basePath  = COM_MEDIA_BASE . ((strlen($current) > 0) ? '\/' . $current : '');$/;"	variable	line:113
+mediaBase	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$mediaBase = str_replace(DIRECTORY_SEPARATOR, '\/', COM_MEDIA_BASE . '\/');$/;"	variable	line:114
+images	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$images  = array ();$/;"	variable	line:116
+folders	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$folders = array ();$/;"	variable	line:117
+docs	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$docs    = array ();$/;"	variable	line:118
+videos	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$videos  = array ();$/;"	variable	line:119
+fileList	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$fileList   = false;$/;"	variable	line:121
+folderList	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$folderList = false;$/;"	variable	line:122
+fileList	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^			$fileList   = JFolder::files($basePath);$/;"	variable	line:127
+folderList	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^			$folderList = JFolder::folders($basePath);$/;"	variable	line:128
+tmpBaseObject	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^			$tmpBaseObject = new JObject;$/;"	variable	line:134
+tmp	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^					$tmp = clone $tmpBaseObject;$/;"	variable	line:140
+ext	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^					$ext = strtolower(JFile::getExt($file));$/;"	variable	line:147
+info	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^							$info = @getimagesize($tmp->path);$/;"	variable	line:161
+dimensions	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^								$dimensions = MediaHelper::imageResize($info[0], $info[1], 60);$/;"	variable	line:169
+dimensions	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^								$dimensions = MediaHelper::imageResize($info[0], $info[1], 16);$/;"	variable	line:181
+tmpBaseObject	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^			$tmpBaseObject = new JObject;$/;"	variable	line:215
+tmp	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^				$tmp = clone $tmpBaseObject;$/;"	variable	line:219
+count	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^				$count = MediaHelper::countFiles($tmp->path);$/;"	variable	line:223
+list	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$list = array('folders' => $folders, 'docs' => $docs, 'images' => $images, 'videos' => $videos);$/;"	variable	line:231
+getVideos	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^	public function getVideos()$/;"	function	line:243
+list	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$list = $this->getList();$/;"	variable	line:245
+items	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/views/chiefs/tmpl/default.php	/^$items =  $this->items;$/;"	variable	line:13
+n	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/views/chiefs/tmpl/default.php	/^$n = 0;$/;"	variable	line:14
+active	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/views/chiefs/tmpl/default.php	/^$active = JFactory::getApplication()->getMenu()->getActive();$/;"	variable	line:15
+menuname	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/views/chiefs/tmpl/default.php	/^$menuname = $active->params->get('page_heading');$/;"	variable	line:16
+document	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/index.php	/^$document = $this;$/;"	variable	line:12
+templateUrl	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/index.php	/^$templateUrl = $document->baseurl . '\/templates\/' . $document->template;$/;"	variable	line:15
+view	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/index.php	/^$view = $this->artx = new ArtxPage($this);$/;"	variable	line:20
+subtemplatename	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/category/finance.php	/^$this->subtemplatename = 'articles';$/;"	variable	line:19
+ContentModelCategory	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^class ContentModelCategory extends JModelList$/;"	class	line:21
+_item	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^	protected $_item = null;$/;"	variable	line:28
+_item	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^	protected $_item = null;$/;"	variable	line:28
+_articles	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^	protected $_articles = null;$/;"	variable	line:30
+_articles	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^	protected $_articles = null;$/;"	variable	line:30
+_siblings	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^	protected $_siblings = null;$/;"	variable	line:32
+_siblings	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^	protected $_siblings = null;$/;"	variable	line:32
+_children	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^	protected $_children = null;$/;"	variable	line:34
+_children	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^	protected $_children = null;$/;"	variable	line:34
+_parent	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^	protected $_parent = null;$/;"	variable	line:36
+_parent	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^	protected $_parent = null;$/;"	variable	line:36
+_context	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^	protected $_context = 'com_content.category';$/;"	variable	line:43
+_context	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^	protected $_context = 'com_content.category';$/;"	variable	line:43
+_category	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^	protected $_category = null;$/;"	variable	line:51
+_category	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^	protected $_category = null;$/;"	variable	line:51
+_categories	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^	protected $_categories = null;$/;"	variable	line:59
+_categories	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^	protected $_categories = null;$/;"	variable	line:59
+__construct	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^	public function __construct($config = array())$/;"	function	line:68
+populateState	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^	protected function populateState($ordering = null, $direction = null)$/;"	function	line:110
+direction	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^	protected function populateState($ordering = null, $direction = null)$/;"	variable	line:110
+app	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^		$app = JFactory::getApplication('site');$/;"	variable	line:112
+pk	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^		$pk  = $app->input->getInt('id');$/;"	variable	line:113
+params	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^		$params = $app->getParams();$/;"	variable	line:118
+menuParams	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^		$menuParams = new Registry;$/;"	variable	line:119
+mergedParams	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^		$mergedParams = clone $menuParams;$/;"	variable	line:126
+user	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^		$user  = JFactory::getUser();$/;"	variable	line:130
+asset	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^		$asset = 'com_content';$/;"	variable	line:132
+itemid	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^		$itemid = $app->input->get('id', 0, 'int') . ':' . $app->input->get('Itemid', 0, 'int');$/;"	variable	line:159
+value	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^		$value = $this->getUserStateFromRequest('com_content.category.filter.' . $itemid . '.tag', 'filter_tag', 0, 'int', false);$/;"	variable	line:161
+search	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^		$search = $app->getUserStateFromRequest('com_content.category.list.' . $itemid . '.filter-search', 'filter-search', '', 'string');$/;"	variable	line:165
+orderCol	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^		$orderCol = $app->getUserStateFromRequest('com_content.category.list.' . $itemid . '.filter_order', 'filter_order', '', 'string');$/;"	variable	line:169
+orderCol	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^			$orderCol = 'a.ordering';$/;"	variable	line:173
+listOrder	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^		$listOrder = $app->getUserStateFromRequest('com_content.category.list.' . $itemid . '.filter_order_Dir', 'filter_order_Dir', '', 'cmd');$/;"	variable	line:178
+listOrder	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^			$listOrder = 'ASC';$/;"	variable	line:182
+limit	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^			$limit = $params->get('num_leading_articles') + $params->get('num_intro_articles') + $params->get('num_links');$/;"	variable	line:192
+limit	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^			$limit = $app->getUserStateFromRequest('com_content.category.list.' . $itemid . '.limit', 'limit', $params->get('display_num'), 'uint');$/;"	variable	line:197
+showSubcategories	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^		$showSubcategories = $params->get('show_subcategory_content', '0');$/;"	variable	line:203
+getItems	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^	public function getItems()$/;"	function	line:226
+limit	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^		$limit = $this->getState('list.limit');$/;"	variable	line:228
+category	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^		if ($this->_articles === null && $category = $this->getCategory())$/;"	variable	line:230
+model	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^			$model = JModelLegacy::getInstance('Articles', 'ContentModel', array('ignore_request' => true));$/;"	variable	line:232
+_articles	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^				$this->_articles = $model->getItems();$/;"	variable	line:253
+_articles	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^				$this->_articles = array();$/;"	variable	line:262
+_pagination	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^			$this->_pagination = $model->getPagination();$/;"	variable	line:265
+_buildContentOrderBy	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^	protected function _buildContentOrderBy()$/;"	function	line:278
+app	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^		$app       = JFactory::getApplication('site');$/;"	variable	line:280
+db	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^		$db        = $this->getDbo();$/;"	variable	line:281
+params	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^		$params    = $this->state->params;$/;"	variable	line:282
+itemid	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^		$itemid    = $app->input->get('id', 0, 'int') . ':' . $app->input->get('Itemid', 0, 'int');$/;"	variable	line:283
+orderCol	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^		$orderCol  = $app->getUserStateFromRequest('com_content.category.list.' . $itemid . '.filter_order', 'filter_order', '', 'string');$/;"	variable	line:284
+orderDirn	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^		$orderDirn = $app->getUserStateFromRequest('com_content.category.list.' . $itemid . '.filter_order_Dir', 'filter_order_Dir', '', 'cmd');$/;"	variable	line:285
+orderby	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^		$orderby   = ' ';$/;"	variable	line:286
+orderCol	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^			$orderCol = null;$/;"	variable	line:290
+orderDirn	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^			$orderDirn = 'ASC';$/;"	variable	line:295
+articleOrderby	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^		$articleOrderby   = $params->get('orderby_sec', 'rdate');$/;"	variable	line:303
+articleOrderDate	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^		$articleOrderDate = $params->get('order_date');$/;"	variable	line:304
+categoryOrderby	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^		$categoryOrderby  = $params->def('orderby_pri', '');$/;"	variable	line:305
+secondary	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^		$secondary        = ContentHelperQuery::orderbySecondary($articleOrderby, $articleOrderDate) . ', ';$/;"	variable	line:306
+primary	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^		$primary          = ContentHelperQuery::orderbyPrimary($categoryOrderby);$/;"	variable	line:307
+getPagination	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^	public function getPagination()$/;"	function	line:321
+getCategory	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^	public function getCategory()$/;"	function	line:338
+params	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^				$params = $this->state->params;$/;"	variable	line:344
+options	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^				$options = array();$/;"	variable	line:345
+categories	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^			$categories = JCategories::getInstance('Content', $options);$/;"	variable	line:354
+_item	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^			$this->_item = $categories->get($this->getState('category.id', 'root'));$/;"	variable	line:355
+user	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^				$user  = JFactory::getUser();$/;"	variable	line:360
+asset	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^				$asset = 'com_content.category.' . $this->_item->id;$/;"	variable	line:361
+_children	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^				$this->_children = $this->_item->getChildren();$/;"	variable	line:370
+_parent	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^				$this->_parent = false;$/;"	variable	line:371
+_parent	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^					$this->_parent = $this->_item->getParent();$/;"	variable	line:375
+_rightsibling	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^				$this->_rightsibling = $this->_item->getSibling();$/;"	variable	line:378
+_leftsibling	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^				$this->_leftsibling = $this->_item->getSibling(false);$/;"	variable	line:379
+_children	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^				$this->_children = false;$/;"	variable	line:383
+_parent	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^				$this->_parent = false;$/;"	variable	line:384
+getParent	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^	public function getParent()$/;"	function	line:398
+getLeftSibling	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^	public function &getLeftSibling()$/;"	function	line:415
+getRightSibling	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^	public function &getRightSibling()$/;"	function	line:432
+getChildren	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^	public function &getChildren()$/;"	function	line:449
+params	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^			$params = $this->getState()->get('params');$/;"	variable	line:459
+orderByPri	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^			$orderByPri = $params->get('orderby_pri');$/;"	variable	line:461
+orderByPri	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^			if ($orderByPri === 'alpha' || $orderByPri === 'ralpha')$/;"	variable	line:463
+_children	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^				$this->_children = ArrayHelper::sortObjects($this->_children, 'title', ($orderByPri === 'alpha') ? 1 : (-1));$/;"	variable	line:465
+hit	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^	public function hit($pk = 0)$/;"	function	line:479
+input	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^		$input = JFactory::getApplication()->input;$/;"	variable	line:481
+hitcount	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^		$hitcount = $input->getInt('hitcount', 1);$/;"	variable	line:482
+pk	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^			$pk = (!empty($pk)) ? $pk : (int) $this->getState('category.id');$/;"	variable	line:486
+table	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^			$table = JTable::getInstance('Category', 'JTable');$/;"	variable	line:488
+FileSizeConvert	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^	public function FileSizeConvert($bytes){$/;"	function	line:495
+bytes	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^		$bytes = floatval($bytes);$/;"	variable	line:496
+arBytes	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^		$arBytes = array($/;"	variable	line:497
+result	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^				$result = $bytes \/ $arItem["VALUE"];$/;"	variable	line:524
+result	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_content/models/category.php	/^				$result = str_replace(".", "," , strval(round($result, 2)))." ".$arItem["UNIT"];$/;"	variable	line:525
 @font-face	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^@font-face {$/;"	function	line:1
 src: local('Geometria Italic'), local('Geometria-Italic')	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^  src: local('Geometria Italic'), local('Geometria-Italic'),$/;"	function	line:4
 url('./fonts/Geometria-Italic.eot?#iefix') format('embedded-opentype')	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^  url('.\/fonts\/Geometria-Italic.eot?#iefix') format('embedded-opentype'),$/;"	function	line:5
@@ -175,7 +344,7 @@ b.medium	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.
 .header-separation h2	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.header-separation h2{$/;"	function	line:496
 .header-separation	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.header-separation{$/;"	function	line:500
 .inner-page #main	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.inner-page #main{$/;"	function	line:504
-.number li:before	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.number li:before{$/;"	function	line:507
+.number > li:before	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.number > li:before{$/;"	function	line:507
 .number > ul	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.number > ul{$/;"	function	line:521
 .number > li	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.number > li {$/;"	function	line:524
 .number	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.number{$/;"	function	line:529
@@ -260,3 +429,42 @@ footer	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.cs
 #pills-tab .nav-link.active, #pills-tab .show > .nav-link	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^#pills-tab .nav-link.active, #pills-tab .show > .nav-link{$/;"	function	line:954
 #pills-tab	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^#pills-tab{$/;"	function	line:958
 .chief-ctn:hover .chief-pic img	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.chief-ctn:hover .chief-pic img{$/;"	function	line:961
+.finance-list h2	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.finance-list h2{$/;"	function	line:964
+.finance-list .row	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.finance-list .row{$/;"	function	line:971
+.finance-list .date-finance	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.finance-list .date-finance{$/;"	function	line:974
+.pdf_file img	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.pdf_file img{$/;"	function	line:978
+.pdf_file	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.pdf_file{$/;"	function	line:981
+.pdf_file span	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.pdf_file span{$/;"	function	line:984
+params	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/category/finance_articles.php	/^$params    = &$this->item->params;$/;"	variable	line:15
+n	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/category/finance_articles.php	/^$n         = count($this->items);$/;"	variable	line:16
+items	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/category/finance_articles.php	/^$items = $this->items;$/;"	variable	line:18
+model	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/category/finance_articles.php	/^$model = $this->getModel();$/;"	variable	line:19
+years	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/category/finance_articles.php	/^$years = [];$/;"	variable	line:21
+years	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/category/finance_articles.php	/^$years = array_unique($years);$/;"	variable	line:25
+active	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/category/finance_articles.php	/^$active = JFactory::getApplication()->getMenu()->getActive();$/;"	variable	line:28
+menuname	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/category/finance_articles.php	/^$menuname = $active->params->get('page_heading');$/;"	variable	line:29
+k	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/category/finance_articles.php	/^	<? foreach($years as $k=>$year):?>$/;"	variable	line:34
+k	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/category/finance_articles.php	/^	<? foreach($years as $k=>$year):?>$/;"	variable	line:42
+image	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/category/finance_articles.php	/^			<?foreach($items as $item): $image = json_decode($item->images)->image_intro; $date = date('d', strtotime($item->created)).' '.JText::_(date('F', strtotime($item->created))).' '.date('Y', strtotime($item->created));?>$/;"	variable	line:45
+last_item_key	/Applications/XAMPP/xamppfiles/htdocs/armz/modules/mod_breadcrumbs/tmpl/default.php	/^	$last_item_key   = key($list);$/;"	variable	line:37
+penult_item_key	/Applications/XAMPP/xamppfiles/htdocs/armz/modules/mod_breadcrumbs/tmpl/default.php	/^	$penult_item_key = key($list);$/;"	variable	line:39
+show_last	/Applications/XAMPP/xamppfiles/htdocs/armz/modules/mod_breadcrumbs/tmpl/default.php	/^	$show_last = $params->get('showLast', 1);$/;"	variable	line:42
+key	/Applications/XAMPP/xamppfiles/htdocs/armz/modules/mod_breadcrumbs/tmpl/default.php	/^	foreach ($list as $key => $item) :$/;"	variable	line:45
+ModBreadCrumbsHelper	/Applications/XAMPP/xamppfiles/htdocs/armz/modules/mod_breadcrumbs/helper.php	/^class ModBreadCrumbsHelper$/;"	class	line:17
+getList	/Applications/XAMPP/xamppfiles/htdocs/armz/modules/mod_breadcrumbs/helper.php	/^	public static function getList(&$params)$/;"	function	line:26
+app	/Applications/XAMPP/xamppfiles/htdocs/armz/modules/mod_breadcrumbs/helper.php	/^		$app     = JFactory::getApplication();$/;"	variable	line:29
+pathway	/Applications/XAMPP/xamppfiles/htdocs/armz/modules/mod_breadcrumbs/helper.php	/^		$pathway = $app->getPathway();$/;"	variable	line:30
+items	/Applications/XAMPP/xamppfiles/htdocs/armz/modules/mod_breadcrumbs/helper.php	/^		$items   = $pathway->getPathWay();$/;"	variable	line:31
+lang	/Applications/XAMPP/xamppfiles/htdocs/armz/modules/mod_breadcrumbs/helper.php	/^		$lang    = JFactory::getLanguage();$/;"	variable	line:32
+menu	/Applications/XAMPP/xamppfiles/htdocs/armz/modules/mod_breadcrumbs/helper.php	/^		$menu    = $app->getMenu();$/;"	variable	line:33
+home	/Applications/XAMPP/xamppfiles/htdocs/armz/modules/mod_breadcrumbs/helper.php	/^			$home = $menu->getDefault($lang->getTag());$/;"	variable	line:38
+home	/Applications/XAMPP/xamppfiles/htdocs/armz/modules/mod_breadcrumbs/helper.php	/^			$home  = $menu->getDefault();$/;"	variable	line:42
+count	/Applications/XAMPP/xamppfiles/htdocs/armz/modules/mod_breadcrumbs/helper.php	/^		$count = count($items);$/;"	variable	line:45
+crumbs	/Applications/XAMPP/xamppfiles/htdocs/armz/modules/mod_breadcrumbs/helper.php	/^		$crumbs = array();$/;"	variable	line:48
+item	/Applications/XAMPP/xamppfiles/htdocs/armz/modules/mod_breadcrumbs/helper.php	/^			$item       = new stdClass;$/;"	variable	line:59
+setSeparator	/Applications/XAMPP/xamppfiles/htdocs/armz/modules/mod_breadcrumbs/helper.php	/^	public static function setSeparator($custom = null)$/;"	function	line:78
+lang	/Applications/XAMPP/xamppfiles/htdocs/armz/modules/mod_breadcrumbs/helper.php	/^		$lang = JFactory::getLanguage();$/;"	variable	line:80
+_separator	/Applications/XAMPP/xamppfiles/htdocs/armz/modules/mod_breadcrumbs/helper.php	/^				$_separator = JHtml::_('image', 'system\/arrow_rtl.png', null, null, true);$/;"	variable	line:88
+_separator	/Applications/XAMPP/xamppfiles/htdocs/armz/modules/mod_breadcrumbs/helper.php	/^				$_separator = JHtml::_('image', 'system\/arrow.png', null, null, true);$/;"	variable	line:92
+_separator	/Applications/XAMPP/xamppfiles/htdocs/armz/modules/mod_breadcrumbs/helper.php	/^			$_separator     = htmlspecialchars($custom, ENT_COMPAT, 'UTF-8');$/;"	variable	line:97
+i	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/mod_breadcrumbs/default.php	/^	}  elseif ($params->get('showLast', 1)) { \/\/ when $i == $count -1 and 'showLast' is true$/;"	variable	line:36

@@ -8,6 +8,7 @@
  */
 
 defined('_JEXEC') or die;
+print_R($list);
 ?>
 
 <ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb<?php echo $moduleclass_sfx; ?>">

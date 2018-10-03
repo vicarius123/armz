@@ -79,10 +79,10 @@ JHtml::_('behavior.framework', true);
       <?php if ($view->containsModules('left')) : ?>
       <div class="wrapper">
         <div class="row float-header">
-          <div class="col-sm-3 left-row">
+          <div class="col-sm-3 left-row d-sm-none d-none d-lg-block d-md-block">
             <?php echo $view->position('left', 'block'); ?>
           </div>
-          <div class="col-sm-9 right-row">
+          <div class="col-sm-12 col-md-9 right-row">
             <?php
             echo $view->position('banner2', '');
             if ($view->containsModules('breadcrumb'))
