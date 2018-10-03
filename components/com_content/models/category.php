@@ -496,23 +496,23 @@ class ContentModelCategory extends JModelList
 		$bytes = floatval($bytes);
 		$arBytes = array(
 			0 => array(
-				"UNIT" => "TB",
+				"UNIT" => "ТБ",
 				"VALUE" => pow(1024, 4)
 			),
 			1 => array(
-				"UNIT" => "GB",
+				"UNIT" => "ГБ",
 				"VALUE" => pow(1024, 3)
 			),
 			2 => array(
-				"UNIT" => "MB",
+				"UNIT" => "МБ",
 				"VALUE" => pow(1024, 2)
 			),
 			3 => array(
-				"UNIT" => "KB",
+				"UNIT" => "КБ",
 				"VALUE" => 1024
 			),
 			4 => array(
-				"UNIT" => "B",
+				"UNIT" => "Б",
 				"VALUE" => 1
 			),
 		);

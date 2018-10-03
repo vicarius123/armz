@@ -47,7 +47,9 @@ $menuname = $active->params->get('page_heading');
 			<div class="row align-items-center">
 				<div class="col-sm-8">
 					<div>
+						<?if($item->catid == 9) :?>
 						<span class="date-finance"><?=$date;?></span>
+						<?endif;?>
 						<a class="pdf_file" href="<?=$item->jcfields[1]->rawvalue;?>" target="_blank"><h2><?=$item->title;?></h2></a>
 					</div>
 				</div>

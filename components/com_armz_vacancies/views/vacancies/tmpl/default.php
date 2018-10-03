@@ -32,8 +32,8 @@ $items = $this->items;
           </div>
           <div class="vacancy-logo">
             <div class="row">
-              <? foreach($companies as $company):?>
-              <div class="col">
+              <? foreach($companies as $k=>$company):?>
+              <div class="col <?=($k>1)?'text-center':'';?>">
                 <img src="/images/company/<?=$company;?>"/>
               </div>
               <?endforeach;?>

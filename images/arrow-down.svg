@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="9px" viewBox="0 0 14 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Пресс-центр" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Новости" transform="translate(-647.000000, -334.000000)" stroke="#005392" stroke-width="2">
+            <g id="icons/20pt/ico-back" transform="translate(654.000000, 333.000000) rotate(-270.000000) translate(-654.000000, -333.000000) translate(644.000000, 323.000000)">
+                <g id="Group" transform="translate(12.000000, 4.000000)">
+                    <polyline id="Triangle" points="0 0 6 6 1.33226763e-15 12 1.33226763e-15 12"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
