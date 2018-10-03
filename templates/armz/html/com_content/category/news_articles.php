@@ -32,12 +32,12 @@ rsort($years);
 ?>
 <h1><?=$active->title;?></h1><br />
 <div  class="news-filter">
-	<select id="news-year" name="news-year">
+	<select id="news-year" name="news-year" class="new-select">
 	<?foreach($years as $k=>$year):?>
 		<option <?=($k==0)?'selected':'';?> ><?=$year;?></option>
 	<?endforeach;?>
 	</select>
-	<select id="news-month" name="news-month">
+	<select id="news-month" name="news-month" class="new-select">
 		<option value="0">Все месяцы</option>
 		<option><?=JText::_('JANUARY');?></option>
 		<option><?=JText::_('FEBRUARY');?></option>
@@ -54,14 +54,14 @@ rsort($years);
 
 	</select>
 </div>
-<div class="news-list header-separation ">
+<div class="news-list all-news header-separation ">
 
 	<?foreach($items as $item): $date = date('d', strtotime($item->created)).' '.JText::_(date('F', strtotime($item->created))).' '.date('Y', strtotime($item->created));?>
 
 		<div class="news-each">
 			<div>
 				<div class="news-date">
-					<?=$date;?>
+					<span><?=$date;?></span>
 				</div>
 				<a href="<?=JRoute::_(ContentHelperRoute::getArticleRoute($item->slug, $item->catid, $item->language));?>" class="read-more"><h2><?=$item->title;?></h2></a>
 
