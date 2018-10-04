@@ -1115,3 +1115,6 @@ footer{
 .news-filter .new-select:last-child{
   margin-right: 0px;
 }
+.news-each h2 a{
+  text-decoration: none !important;
+}

@@ -266,3 +266,4 @@ footer	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.cs
 .new-select option:nth-child(n+2)	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.new-select option:nth-child(n+2){$/;"	function	line:1109
 .news-filter .new-select	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.news-filter .new-select{$/;"	function	line:1112
 .news-filter .new-select:last-child	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.news-filter .new-select:last-child{$/;"	function	line:1115
+.news-each h2 a	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.news-each h2 a{$/;"	function	line:1118

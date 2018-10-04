@@ -126,7 +126,68 @@ jQuery(document).ready(function(){
       jQuery('.carousel-item').removeClass('active');
       jQuery('.chiefs-ctn').css('margin-top', 0)
     }, 500)
-  })
+  });
+
+  //News filter//
+
+  if(jQuery('.all-news').length > 0){
+    _news_year = jQuery('#news-year').val();
+    console.log(_news_year);
+    _all_news = jQuery('.news-each')
+    _all_news.each(function(v, k){
+      _item = jQuery(k);
+      if(_item.data('year') != _news_year){
+        _item.hide();
+      }
+    })
+    //*changing year//
+    jQuery('#news-year').change(function(){
+      _val = jQuery(this).val();
+      _month = jQuery('#news-month').val();
+      _all_news = jQuery('.news-each')
+      _all_news.each(function(v, k){
+        _item = jQuery(k);
+        if(_month == 0){
+          if(_item.data('year') == _val){
+            _item.fadeIn();
+          }else{
+            _item.hide();
+          }
+        }else{
+          if( (_item.data('year') == _val) && (_item.data('month')==_month)){
+            _item.fadeIn();
+          }else{
+            _item.hide();
+          }
+        }
+
+      })
+    })
+
+    jQuery('#news-month').change(function(){
+      _val = jQuery(this).val();
+      _news_year = jQuery('#news-year').val();
+      console.log(_news_year);
+      _all_news = jQuery('.news-each')
+      _all_news.each(function(v, k){
+        if(_val != 0){
+          _item = jQuery(k);
+          if((_item.data('year')==_news_year) && (_item.data('month')==_val)){
+            _item.fadeIn();
+          }else{
+            _item.hide();
+          }
+        }else{
+          if(_item.data('year') == _news_year){
+            _item.fadeIn();
+          }
+        }
+
+      })
+
+    })
+
+  }
 
 
 })

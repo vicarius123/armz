@@ -39,18 +39,18 @@ rsort($years);
 	</select>
 	<select id="news-month" name="news-month" class="new-select">
 		<option value="0">Все месяцы</option>
-		<option><?=JText::_('JANUARY');?></option>
-		<option><?=JText::_('FEBRUARY');?></option>
-		<option><?=JText::_('MARCH');?></option>
-		<option><?=JText::_('APRIL');?></option>
-		<option><?=JText::_('MAY');?></option>
-		<option><?=JText::_('JUNE');?></option>
-		<option><?=JText::_('JULY');?></option>
-		<option><?=JText::_('AUGUST');?></option>
-		<option><?=JText::_('SEPTEMBER');?></option>
-		<option><?=JText::_('OCTOBER');?></option>
-		<option><?=JText::_('NOVEMBER');?></option>
-		<option><?=JText::_('DECEMBER');?></option>
+		<option value="1"><?=JText::_('JANUARY');?></option>
+		<option value="2"><?=JText::_('FEBRUARY');?></option>
+		<option value="3"><?=JText::_('MARCH');?></option>
+		<option value="4"><?=JText::_('APRIL');?></option>
+		<option value="5"><?=JText::_('MAY');?></option>
+		<option value="6"><?=JText::_('JUNE');?></option>
+		<option value="7"><?=JText::_('JULY');?></option>
+		<option value="8"><?=JText::_('AUGUST');?></option>
+		<option value="9"><?=JText::_('SEPTEMBER');?></option>
+		<option value="10"><?=JText::_('OCTOBER');?></option>
+		<option value="11"><?=JText::_('NOVEMBER');?></option>
+		<option value="12"><?=JText::_('DECEMBER');?></option>
 
 	</select>
 </div>
@@ -58,7 +58,7 @@ rsort($years);
 
 	<?foreach($items as $item): $date = date('d', strtotime($item->created)).' '.JText::_(date('F', strtotime($item->created))).' '.date('Y', strtotime($item->created));?>
 
-		<div class="news-each">
+		<div class="news-each" data-year="<?=date('Y', strtotime($item->created));?>" data-month="<?=date('n', strtotime($item->created));?>">
 			<div>
 				<div class="news-date">
 					<span><?=$date;?></span>

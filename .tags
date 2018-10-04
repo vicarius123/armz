@@ -16,9 +16,6 @@ i	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/mod_menu/left.p
 class	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/mod_menu/left.php	/^	$class = 'item-' . $item->id;$/;"	variable	line:24
 aliasToId	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/mod_menu/left.php	/^		$aliasToId = $item->params->get('aliasoptions');$/;"	variable	line:42
 aliasToId	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/mod_menu/left.php	/^		if (count($path) > 0 && $aliasToId == $path[count($path) - 1])$/;"	variable	line:44
-init	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/script.js	/^    function init(){$/;"	function	line:71
-setTimeout	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/script.js	/^    setTimeout(function(){$/;"	function	line:107
-setTimeout	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/script.js	/^    setTimeout(function(){$/;"	function	line:125
 Armz_chiefsModelChiefs	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^class Armz_chiefsModelChiefs extends JModelList$/;"	class	line:22
 __construct	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^	public function __construct($config = array())$/;"	function	line:32
 populateState	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^	protected function populateState($ordering = null, $direction = null)$/;"	function	line:70
@@ -239,6 +236,9 @@ years	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content
 years	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/category/news_articles.php	/^$years = array_unique($years);$/;"	variable	line:29
 k	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/category/news_articles.php	/^	<?foreach($years as $k=>$year):?>$/;"	variable	line:36
 date	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/category/news_articles.php	/^	<?foreach($items as $item): $date = date('d', strtotime($item->created)).' '.JText::_(date('F', strtotime($item->created))).' '.date('Y', strtotime($item->created));?>$/;"	variable	line:59
+init	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/script.js	/^    function init(){$/;"	function	line:71
+setTimeout	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/script.js	/^    setTimeout(function(){$/;"	function	line:107
+setTimeout	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/script.js	/^    setTimeout(function(){$/;"	function	line:125
 @font-face	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^@font-face {$/;"	function	line:1
 src: local('Geometria Italic'), local('Geometria-Italic')	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^  src: local('Geometria Italic'), local('Geometria-Italic'),$/;"	function	line:4
 url('./fonts/Geometria-Italic.eot?#iefix') format('embedded-opentype')	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^  url('.\/fonts\/Geometria-Italic.eot?#iefix') format('embedded-opentype'),$/;"	function	line:5
@@ -501,3 +501,4 @@ footer	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.cs
 .new-select option:nth-child(n+2)	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.new-select option:nth-child(n+2){$/;"	function	line:1109
 .news-filter .new-select	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.news-filter .new-select{$/;"	function	line:1112
 .news-filter .new-select:last-child	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.news-filter .new-select:last-child{$/;"	function	line:1115
+.news-each h2 a	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.news-each h2 a{$/;"	function	line:1118
