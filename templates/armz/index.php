@@ -45,7 +45,7 @@ JHtml::_('behavior.framework', true);
   <!--[if lte IE 7]><link rel="stylesheet" href="<?php echo $templateUrl; ?>/css/template.ie7.css" media="screen" /><![endif]-->
   <script>jQuery.noConflict();</script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru-RU" type="text/javascript"></script>
   <script src="<?php echo $templateUrl; ?>/jquery.matchHeight.js"></script>
   <script src="<?php echo $templateUrl; ?>/script.js"></script>
 

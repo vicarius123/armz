@@ -1,0 +1,15 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {"type": "Feature", "id": 0, "geometry": {"type": "Point", "coordinates": [55.946078, 63.028486]}, "properties": {"balloonContent": "<b>ПАО «ППГХО»</b><br>674673, Забайкальский край, г. Краснокаменск"}},
+        {"type": "Feature", "id": 1, "geometry": {"type": "Point", "coordinates": [50.093720, 118.033256]}, "properties": {"balloonContent": "<b>ПАО «Далур»</b><br>641750, Курганская обл., Далматовский район, с. Уксянское, ул. Ленина, 42"}},
+        {"type": "Feature", "id": 2, "geometry": {"type": "Point", "coordinates": [52.033973, 113.499432]}, "properties": {"balloonContent": "<b>ПАО «Хиагда»</b><br>672002, Забайкальский край, г. Чита, ВОХ 02086"}},
+        {"type": "Feature", "id": 3, "geometry": {"type": "Point", "coordinates": [58.973159, 126.273107]}, "properties": {"balloonContent": "<b>ПАО «Эльконский ГМК»</b><br>678955, Республика Саха (Якутия), Алданский район, г. Томмот, ул. Укуланская, д.51"}},
+        {"type": "Feature", "id": 4, "geometry": {"type": "Point", "coordinates": [58.602441, 125.332544]}, "properties": {"balloonContent": "<b>ПАО «Лунное»</b><br>678900, Республика Саха (Якутия),г. Алдан, 26 Пикет, № 12."}},
+        {"type": "Feature", "id": 5, "geometry": {"type": "Point", "coordinates": [52.044338, 113.243835]}, "properties": {"balloonContent": "<b>ПАО «УДК «Горное»</b><br>672018, Забайкальский край, г. Чита, Дворцовский тракт, д.50"}},
+        {"type": "Feature", "id": 6, "geometry": {"type": "Point", "coordinates": [55.746527, 37.659245]}, "properties": {"balloonContent": "<b>ПАО «Первая горнорудная компания»</b><br>109004, Москва, Б. Дровяной переулок, д. 22"}},
+        {"type": "Feature", "id": 7, "geometry": {"type": "Point", "coordinates": [55.744693, 37.657907]}, "properties": {"balloonContent": "<b>ПООО «АРМЗ Сервис»</b><br>109004, Москва, Большой Дровяной переулок, дом 12, строение 3"}},
+        {"type": "Feature", "id": 8, "geometry": {"type": "Point", "coordinates": [55.748716, 37.657682]}, "properties": {"balloonContent": "<b>ПАО «РУСБУРМАШ»</b><br>109004, Москва, ул. Земляной Вал, д.59, стр.2."}},
+        {"type": "Feature", "id": 9, "geometry": {"type": "Point", "coordinates": [55.646563, 37.670339]}, "properties": {"balloonContent": "<b>ПАО «ВНИПИпромтехнологии»</b><br>115409, Москва, Каширское шоссе, 33"}}
+    ]
+}
