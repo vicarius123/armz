@@ -502,3 +502,21 @@ footer	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.cs
 .news-filter .new-select	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.news-filter .new-select{$/;"	function	line:1112
 .news-filter .new-select:last-child	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.news-filter .new-select:last-child{$/;"	function	line:1115
 .news-each h2 a	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.news-each h2 a{$/;"	function	line:1118
+.news-inner-page h1	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.news-inner-page h1{$/;"	function	line:1121
+.news-inner-page .news-date	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.news-inner-page .news-date{$/;"	function	line:1125
+getMore	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/helper.php	/^function getMore(){$/;"	function	line:5
+params	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/article/news.php	/^$params  = $this->item->params;$/;"	variable	line:15
+images	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/article/news.php	/^$images  = json_decode($this->item->images);$/;"	variable	line:16
+urls	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/article/news.php	/^$urls    = json_decode($this->item->urls);$/;"	variable	line:17
+canEdit	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/article/news.php	/^$canEdit = $params->get('access-edit');$/;"	variable	line:18
+user	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/article/news.php	/^$user    = JFactory::getUser();$/;"	variable	line:19
+info	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/article/news.php	/^$info    = $params->get('info_block_position', 0);$/;"	variable	line:20
+lang	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/article/news.php	/^$lang = JFactory::getLanguage();$/;"	variable	line:22
+tag	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/article/news.php	/^$tag = $lang->getTag();$/;"	variable	line:23
+assocParam	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/article/news.php	/^$assocParam = (JLanguageAssociations::isEnabled() && $params->get('show_associations'));$/;"	variable	line:27
+item	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/article/news.php	/^$item = $this->item;$/;"	variable	line:29
+date	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/article/news.php	/^$date = $date = date('d', strtotime($item->created)).' '.JText::_(date('F', strtotime($item->created))).' '.date('Y', strtotime($item->created));$/;"	variable	line:30
+getMore	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/article/helper.php	/^function getMore($tag, $id){$/;"	function	line:5
+db	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/article/helper.php	/^  $db = JFactory::getDbo();$/;"	variable	line:6
+query	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/article/helper.php	/^  $query = $db->getQuery(true);$/;"	variable	line:7
+results	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/article/helper.php	/^  $results = $db->loadObjectList();$/;"	variable	line:16

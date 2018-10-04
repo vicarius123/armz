@@ -1118,3 +1118,10 @@ footer{
 .news-each h2 a{
   text-decoration: none !important;
 }
+.news-inner-page h1{
+  font-size:40px;
+  line-height: 1.38;
+}
+.news-inner-page .news-date{
+  margin-bottom:10px;
+}
