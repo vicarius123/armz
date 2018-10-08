@@ -726,7 +726,7 @@ footer{
 .row-ctn .col-sm-6:nth-last-child(2){
   border-bottom:0px;
 }
-.inner-page .item-111 a{
+.inner-page .item-111 a, .inner-page .item-237 a{
   color: #439bde !important;
 }
 .add-ico,.phone-ico,.mail-ico{
@@ -1138,13 +1138,13 @@ footer{
   text-decoration: none !important;
 
 }
-#main_menu > li > a:before{
+#main_menu > li:not(.item-237):not(.item-111) > a:before{
   content:'';
   width:0px;
   -webkit-transition: width .5s; /* Safari */
   transition: width .5s;
 }
-#main_menu > li:hover > a:before{
+#main_menu > li:hover:not(.item-237):not(.item-111) > a:before{
   content: '';
   width: 100%;
   height: 3px;

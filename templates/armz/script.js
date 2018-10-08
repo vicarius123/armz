@@ -269,5 +269,15 @@ jQuery(document).ready(function(){
     }
 
   }
+  _org = jQuery('.mod-languages a').attr('href');
+  console.log(_org);
+  _eng = jQuery('.item-111 a');
+  _rus = jQuery('.item-237 a');
 
+  if(_eng.length > 0){
+    _eng.attr('href', _org)
+  }
+  if(_rus.length > 0){
+    _rus.attr('href', _org)
+  }
 })
