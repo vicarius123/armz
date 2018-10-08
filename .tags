@@ -48,46 +48,6 @@ key	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models
 error_dateformat	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^				$error_dateformat = true;$/;"	variable	line:205
 isValidDate	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^	private function isValidDate($date)$/;"	function	line:225
 date	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/models/chiefs.php	/^		$date = str_replace('\/', '-', $date);$/;"	variable	line:227
-MediaModelList	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^class MediaModelList extends JModelLegacy$/;"	class	line:20
-getState	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^	public function getState($property = null, $default = null)$/;"	function	line:32
-default	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^	public function getState($property = null, $default = null)$/;"	variable	line:32
-set	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		static $set;$/;"	variable	line:34
-input	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^			$input  = JFactory::getApplication()->input;$/;"	variable	line:38
-folder	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^			$folder = $input->get('folder', '', 'path');$/;"	variable	line:39
-parent	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^			$parent = str_replace("\\\\", '\/', dirname($folder));$/;"	variable	line:42
-parent	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^			$parent = ($parent == '.') ? null : $parent;$/;"	variable	line:43
-set	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^			$set = true;$/;"	variable	line:45
-getImages	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^	public function getImages()$/;"	function	line:58
-list	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$list = $this->getList();$/;"	variable	line:60
-getFolders	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^	public function getFolders()$/;"	function	line:72
-list	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$list = $this->getList();$/;"	variable	line:74
-getDocuments	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^	public function getDocuments()$/;"	function	line:86
-list	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$list = $this->getList();$/;"	variable	line:88
-getList	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^	public function getList()$/;"	function	line:100
-list	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		static $list;$/;"	variable	line:102
-current	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$current = (string) $this->getState('folder');$/;"	variable	line:111
-basePath	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$basePath  = COM_MEDIA_BASE . ((strlen($current) > 0) ? '\/' . $current : '');$/;"	variable	line:113
-mediaBase	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$mediaBase = str_replace(DIRECTORY_SEPARATOR, '\/', COM_MEDIA_BASE . '\/');$/;"	variable	line:114
-images	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$images  = array ();$/;"	variable	line:116
-folders	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$folders = array ();$/;"	variable	line:117
-docs	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$docs    = array ();$/;"	variable	line:118
-videos	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$videos  = array ();$/;"	variable	line:119
-fileList	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$fileList   = false;$/;"	variable	line:121
-folderList	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$folderList = false;$/;"	variable	line:122
-fileList	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^			$fileList   = JFolder::files($basePath);$/;"	variable	line:127
-folderList	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^			$folderList = JFolder::folders($basePath);$/;"	variable	line:128
-tmpBaseObject	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^			$tmpBaseObject = new JObject;$/;"	variable	line:134
-tmp	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^					$tmp = clone $tmpBaseObject;$/;"	variable	line:140
-ext	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^					$ext = strtolower(JFile::getExt($file));$/;"	variable	line:147
-info	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^							$info = @getimagesize($tmp->path);$/;"	variable	line:161
-dimensions	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^								$dimensions = MediaHelper::imageResize($info[0], $info[1], 60);$/;"	variable	line:169
-dimensions	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^								$dimensions = MediaHelper::imageResize($info[0], $info[1], 16);$/;"	variable	line:181
-tmpBaseObject	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^			$tmpBaseObject = new JObject;$/;"	variable	line:215
-tmp	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^				$tmp = clone $tmpBaseObject;$/;"	variable	line:219
-count	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^				$count = MediaHelper::countFiles($tmp->path);$/;"	variable	line:223
-list	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$list = array('folders' => $folders, 'docs' => $docs, 'images' => $images, 'videos' => $videos);$/;"	variable	line:231
-getVideos	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^	public function getVideos()$/;"	function	line:243
-list	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$list = $this->getList();$/;"	variable	line:245
 items	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/views/chiefs/tmpl/default.php	/^$items =  $this->items;$/;"	variable	line:13
 n	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/views/chiefs/tmpl/default.php	/^$n = 0;$/;"	variable	line:14
 active	/Applications/XAMPP/xamppfiles/htdocs/armz/components/com_armz_chiefs/views/chiefs/tmpl/default.php	/^$active = JFactory::getApplication()->getMenu()->getActive();$/;"	variable	line:15
@@ -255,12 +215,6 @@ view	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/index.php	/^$view
 document	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/index.php	/^$document = $this;$/;"	variable	line:12
 templateUrl	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/index.php	/^$templateUrl = $document->baseurl . '\/templates\/' . $document->template;$/;"	variable	line:15
 view	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/index.php	/^$view = $this->artx = new ArtxPage($this);$/;"	variable	line:20
-init	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/script.js	/^    function init(){$/;"	function	line:79
-setTimeout	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/script.js	/^    setTimeout(function(){$/;"	function	line:115
-setTimeout	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/script.js	/^    setTimeout(function(){$/;"	function	line:133
-init	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/script.js	/^    function init () {$/;"	function	line:218
-onObjectEvent	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/script.js	/^        function onObjectEvent (e) {$/;"	function	line:238
-onClusterEvent	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/script.js	/^        function onClusterEvent (e) {$/;"	function	line:252
 params	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/article/normal2.php	/^$params  = $this->item->params;$/;"	variable	line:15
 images	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/article/normal2.php	/^$images  = json_decode($this->item->images);$/;"	variable	line:16
 urls	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/html/com_content/article/normal2.php	/^$urls    = json_decode($this->item->urls);$/;"	variable	line:17
@@ -557,3 +511,49 @@ footer	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.cs
 .pdf_file:hover	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.pdf_file:hover{$/;"	function	line:1194
 .pdf_file:hover h2,.left-menu a:hover,.inner-menu a:hover	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.pdf_file:hover h2,.left-menu a:hover,.inner-menu a:hover{$/;"	function	line:1197
 .left-menu .current > a	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/css/template.css	/^.left-menu .current > a{$/;"	function	line:1201
+MediaModelList	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^class MediaModelList extends JModelLegacy$/;"	class	line:20
+getState	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^	public function getState($property = null, $default = null)$/;"	function	line:32
+default	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^	public function getState($property = null, $default = null)$/;"	variable	line:32
+set	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		static $set;$/;"	variable	line:34
+input	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^			$input  = JFactory::getApplication()->input;$/;"	variable	line:38
+folder	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^			$folder = $input->get('folder', '', 'path');$/;"	variable	line:39
+parent	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^			$parent = str_replace("\\\\", '\/', dirname($folder));$/;"	variable	line:42
+parent	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^			$parent = ($parent == '.') ? null : $parent;$/;"	variable	line:43
+set	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^			$set = true;$/;"	variable	line:45
+getImages	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^	public function getImages()$/;"	function	line:58
+list	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$list = $this->getList();$/;"	variable	line:60
+getFolders	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^	public function getFolders()$/;"	function	line:72
+list	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$list = $this->getList();$/;"	variable	line:74
+getDocuments	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^	public function getDocuments()$/;"	function	line:86
+list	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$list = $this->getList();$/;"	variable	line:88
+getList	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^	public function getList()$/;"	function	line:100
+list	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		static $list;$/;"	variable	line:102
+current	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$current = (string) $this->getState('folder');$/;"	variable	line:111
+basePath	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$basePath  = COM_MEDIA_BASE . ((strlen($current) > 0) ? '\/' . $current : '');$/;"	variable	line:113
+mediaBase	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$mediaBase = str_replace(DIRECTORY_SEPARATOR, '\/', COM_MEDIA_BASE . '\/');$/;"	variable	line:114
+images	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$images  = array ();$/;"	variable	line:116
+folders	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$folders = array ();$/;"	variable	line:117
+docs	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$docs    = array ();$/;"	variable	line:118
+videos	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$videos  = array ();$/;"	variable	line:119
+fileList	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$fileList   = false;$/;"	variable	line:121
+folderList	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$folderList = false;$/;"	variable	line:122
+fileList	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^			$fileList   = JFolder::files($basePath);$/;"	variable	line:127
+folderList	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^			$folderList = JFolder::folders($basePath);$/;"	variable	line:128
+tmpBaseObject	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^			$tmpBaseObject = new JObject;$/;"	variable	line:134
+tmp	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^					$tmp = clone $tmpBaseObject;$/;"	variable	line:140
+ext	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^					$ext = strtolower(JFile::getExt($file));$/;"	variable	line:147
+info	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^							$info = @getimagesize($tmp->path);$/;"	variable	line:162
+dimensions	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^								$dimensions = MediaHelper::imageResize($info[0], $info[1], 60);$/;"	variable	line:170
+dimensions	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^								$dimensions = MediaHelper::imageResize($info[0], $info[1], 16);$/;"	variable	line:182
+tmpBaseObject	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^			$tmpBaseObject = new JObject;$/;"	variable	line:216
+tmp	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^				$tmp = clone $tmpBaseObject;$/;"	variable	line:220
+count	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^				$count = MediaHelper::countFiles($tmp->path);$/;"	variable	line:224
+list	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$list = array('folders' => $folders, 'docs' => $docs, 'images' => $images, 'videos' => $videos);$/;"	variable	line:232
+getVideos	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^	public function getVideos()$/;"	function	line:244
+list	/Applications/XAMPP/xamppfiles/htdocs/armz/administrator/components/com_media/models/list.php	/^		$list = $this->getList();$/;"	variable	line:246
+init	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/script.js	/^    function init(){$/;"	function	line:81
+setTimeout	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/script.js	/^    setTimeout(function(){$/;"	function	line:117
+setTimeout	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/script.js	/^    setTimeout(function(){$/;"	function	line:135
+init	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/script.js	/^    function init () {$/;"	function	line:220
+onObjectEvent	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/script.js	/^        function onObjectEvent (e) {$/;"	function	line:240
+onClusterEvent	/Applications/XAMPP/xamppfiles/htdocs/armz/templates/armz/script.js	/^        function onClusterEvent (e) {$/;"	function	line:254
